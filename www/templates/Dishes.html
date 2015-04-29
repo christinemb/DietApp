@@ -1,9 +1,22 @@
 <ion-view view-title="Dishes">
   <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}}
+   <ion-list ng-if="dishesId == 1">
+
+      <ion-item>almonds</ion-item>
+
+      <ion-item>olives</ion-item>
       </ion-item>
+      <ion-item>anchovies, piquillo peppers, caperberries</ion-item>
+      <ion-item>pork crackling, mushroom salt</ion-item>
+    </ion-list>
+    <ion-list ng-if="dishesId == 2">
+      <ion-item>octopus, smoked paprika, potatoes, px vinegar</ion-item>
+      <ion-item>salted cod cakes, lemon aioli</ion-item>
+      <ion-item>cured salmon, piquillo pepper, smoked scallop roe aioli</ion-item>
+    </ion-list>
+   <ion-list ng-if="dishesId == 3">
+     <ion-item>tortilla, romesco</ion-item>      <ion-item>patatas bravas</ion-item>
+      <ion-item>wild mushrooms, organic cider, garlic</ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
