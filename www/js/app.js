@@ -26,17 +26,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.foodlists', {
-    url: "/foodlists/:foodlistsId",
+  .state('app.foods', {
+    url: "/foods/:foodsId",
     views: {
       'menuContent': {
-          templateUrl: "templates/foodlists.html",
-          controller: 'FoodlistsCtrl'
+          templateUrl: "templates/foods.html",
+          controller: 'FoodsCtrl'
              }
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/foodlists/1');
+  $urlRouterProvider.otherwise('/app/foods/1');
 });
 
      
