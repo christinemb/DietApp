@@ -31,13 +31,13 @@ angular.module('DietApp', ['ionic', 'DietApp.controllers'])
   })
   
 .state('app.dishes', {
--    url: "/search",
-+    url: "/dishes/:DishesId",
-     views: {
+
++    url: "/dishes/:dishesId",
+     
      views: {
        'menuContent': {
-       'menuContent': {
--        templateUrl: "templates/search.html"
+       
+
 +        templateUrl: "templates/dishes.html",
 -      }
 +        controller: 'DishesCtrl'
