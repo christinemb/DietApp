@@ -1,6 +1,6 @@
 
 
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('DietApp', ['ionic', 'DietApp.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
