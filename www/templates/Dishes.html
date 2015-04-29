@@ -1,4 +1,4 @@
-<ion-view view-title="Dishes">
+<ion-view view-title={{ [ '', 'Nibbles', 'Fish & Shellfish', 'Vegetables & Pulses', 'Meat'][dishesId] }}">
   <ion-content>
    <ion-list ng-if="dishesId == 1">
 
@@ -14,12 +14,13 @@
       <ion-item>octopus, smoked paprika, potatoes, px vinegar</ion-item>
       <ion-item>salted cod cakes, lemon aioli</ion-item>
       <ion-item>cured salmon, piquillo pepper, smoked scallop roe aioli</ion-item>
-    </ion-list>   <ion-item>scallops, black pudding, cauliflower purée, lardo, oats</ion-item>
+      
+	<ion-item>scallops, black pudding, cauliflower purée, lardo, oats</ion-item>
       <ion-item>basque style monkfish, parsley mayonnaise</ion-item>      <ion-item>clams, chorizo, sherry </ion-item>
      <ion-item>squid, garlic, salt, parsley, lemon</ion-item>
     <ion-item>mussels, almonds, white wine</ion-item>
     <ion-item>crab, piquillo pepper, pickled kohl-rabi, black olive soil</ion-item>
-	
+	 </ion-list>   
 	
    <ion-list ng-if="dishesId == 3">
      <ion-item>tortilla, romesco</ion-item>      <ion-item>patatas bravas</ion-item>
@@ -58,10 +59,8 @@
 +      <ion-item>chorizo, sherry</ion-item>
 +      <ion-item>black pudding, chickpeas, raisins, pine nuts, parsley</ion-item>
 +    </ion-list>
-+    <ion-list ng-if="dishesId != 1 && dishesId != 2 && dishesId != 3 && dishesId != 4">
-	<ion-item>Please select a category from the side menu.</ion-item>
-  
-  </ion-list>
+
++    
 	
   </ion-content>
 </ion-view>
