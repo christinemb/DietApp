@@ -4,6 +4,6 @@ angular.module('DietApp.controllers', [])
   
 });
 .controller('DishesCtrl', function($scope, $stateParams) {
-  $scope.dishesId = $scope.dishesId;
+  $stateParams.dishesId = $scope.dishesId;
  });
- });
+ 
